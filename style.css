@@ -1,0 +1,123 @@
+/* обнуляем отступы у body */
+body {
+  margin: 0;
+  /* используем background-size: 100% вместо cover для уверенности, что фон будет заполнен полностью */
+  background-size: 100%;
+}
+
+/* обнуляем padding и margin для всех элементов и устанавливаем box-sizing: border-box */
+*, *:after, *:before {
+  box-sizing: border-box;
+}
+
+/* создаем контейнер с максимальной шириной в 1200px и автоматическим центрированием */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* секция intro с фоном, который заполняет всю секцию */
+.intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background: url(1.gif);
+  background-size: cover;
+}
+
+/* внутренний контейнер с заголовком и описанием внутри секции intro */
+.intro_inner {
+  width: auto;
+  max-width: 800px;
+  margin: 0 auto;
+  color: #fff;
+  justify-content: space-between;
+}
+
+/* стили для заголовка внутри секции intro */
+.intro_title {
+  font-size: 60px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 1;
+  margin: 0;
+}
+
+/* стили для описания внутри секции intro */
+.text {
+  text-align: center;
+  position: absolute;
+}
+
+/* стили для слайдера внутри секции intro */
+.slider {
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: left;
+  line-height: 1;
+}
+
+/* шапка сайта */
+.header {
+  width: 100%;
+  position: fixed; /* изменяем position на fixed, чтобы шапка была всегда видна */
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: #000;
+  /* добавляем transition для плавного появления шапки при скролле */
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* внутренний контейнер в шапке */
+.header_inner {
+  padding-top: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* логотип в шапке */
+.header_logo {
+  font-size: 30px;
+  font-weight: 700;
+  color: #fff;
+}
+
+/* навигация в шапке */
+.nav {
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+/* ссылки навигации в шапке */
+.nav_link {
+  text-decoration: none;
+  color: #fff;
+  transition: color .1s linear;
+  display: inline-block;
+  vertical-align: top;
+  margin: 20px;
+  position: relative;
+}
+
+/* подчеркивание при наведении на ссылки н
+
+
+
+
+Regenerate response
+
+
+
+
+
+
+
+
